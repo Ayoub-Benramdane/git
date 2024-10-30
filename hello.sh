@@ -1,6 +1,5 @@
 #!/bin/bash
 
-# This is an unwanted but staged comment
+# Default is "World"
 name=${1:-"World"}
-
 echo "Hello, $name"
