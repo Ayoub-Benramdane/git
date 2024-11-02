@@ -38,7 +38,7 @@
     - "h" refere to the hash of the commit
     - "ad"date of the commit to format it "--date=short"
     - "s" refere to commit message
-    - "d" branch info
+    - "d" branche and tag info
     - "an" the author name
 ## Check it out :
 * revert the working tree and captured in the first snapshot then print the content of **hello.sh** file using **git rev-list --max-parents=0 HEAD** and **git checkout b0d670bf7967d1ee20a295b626fd89710bdf7ec1** and **cat hello.sh** .
