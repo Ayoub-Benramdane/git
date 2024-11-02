@@ -3,12 +3,10 @@
 ## Setting Up Git :
 * instaling git 
   - *sudo apt install git-all*
-  -  *git --version*
 
 * Configure git with email & username
-   -   git config --global user.email "you@example.com"
-   -   git config --global user.name "Your Name"
-   -   for check if added : git config --get user.email
+   -   git config --global user.email "Ayoubbenramdane05@gmail.com"
+   -   git config --global user.name "abenramd"
 
 ## Git commits to commit :
 * in the **work** directory , i create a subdirectory named **hello** inside this directory i general a file titled **hello.sh**
@@ -37,6 +35,11 @@
     - the second entrie is to specifying and view commits made withing  the last 5 min using **git log --oneline -n 2 --since="5 minutes ago"**
 * **Personalized Format**   
     - customize the format of commits including the commit hash, date, message, branch information , and author name using **git log --oneline --pretty=format:'* %h %ad | %s (%D) [%an]'
+    - "h" refere to the hash of the commit
+    - "ad"date of the commit to format it "--date=short"
+    - "s" refere to commit message
+    - "d" branch info
+    - "an" the author name
 ## Check it out :
 * revert the working tree and captured in the first snapshot then print the content of **hello.sh** file using **git rev-list --max-parents=0 HEAD** and **git checkout b0d670bf7967d1ee20a295b626fd89710bdf7ec1** and **cat hello.sh** .
 * revert the working tree to the second most recent snapshot using **git rev-list --max-count=2 HEAD | tail -n1** and  and **git checkout daed0ac75ea3bc82fb2bdc56f0aa4c30dcc3a8c6** then print the content of **hello.sh** .
@@ -153,14 +156,6 @@ echo "Hello, $my_name"
 * switch to cloned repo and pull the changes using **git pull origin master**
 * for push from cloned_hello :
     * git remote -v
-    * git remote add shared ../hello.git
-    * github  https://github.com/Ayoub-Benramdane/git.git (fetch)
-     github  https://github.com/Ayoub-Benramdane/git.git (push)
-     origin  https://learn.zone01oujda.ma/git/abenramd/git.git (fetch)
-     origin  https://learn.zone01oujda.ma/git/abenramd/git.git (push)
-     shared  ../hello.git (fetch)
-     shared  ../hello.git (push)
-
-git remote add origin https://github.com/Ayoub-Benramdane/git.git
-
-git push origin --all
+    * git remote add  github  https://github.com/Ayoub-Benramdane/git.git
+    * git push github --all
+    * git push github --tags
